@@ -21,7 +21,12 @@ Deploys as a static site — output goes to `dist/`. Configured for Cloudflare P
 
 ## To update before launch
 
-- [ ] Confirm production domain and update `site` in `astro.config.mjs`
-- [ ] Replace placeholder contact email in `src/components/Contact.astro`
-- [ ] Replace placeholder products in `src/components/Products.astro`
+- [x] Confirm production domain and update `site` in `astro.config.mjs` — `makerionlabs.com` confirmed
+- [x] Replace placeholder contact email in `src/components/Contact.astro` — `hello@makerionlabs.com` forwarding configured
+- [ ] Replace placeholder products in `src/components/Products.astro` (Monobase — confirm real link/description when it's ready to show)
 - [ ] Add real social links in `src/components/Footer.astro`
+
+## Analytics
+
+Cloudflare Web Analytics is enabled in automatic mode (Dashboard → Analytics & Logs →
+Web Analytics) — no tracking script needed in the codebase.

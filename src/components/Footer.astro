@@ -1,0 +1,23 @@
+---
+const year = new Date().getFullYear();
+const links = [
+	{ href: "https://github.com/MakerionLabs", label: "GitHub" },
+];
+---
+
+<footer class="border-t border-[var(--color-border)]">
+	<div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-10 text-sm text-[var(--color-text-muted)] sm:flex-row">
+		<div class="flex items-center gap-2">
+			<img src="/logo.png" alt="Makerion Labs" class="h-6 w-6 rounded-lg" width="24" height="24" />
+			<span>© {year} Makerion LLC. All rights reserved.</span>
+		</div>
+
+		<div class="flex items-center gap-6">
+			{links.map((link) => (
+				<a href={link.href} target="_blank" rel="noreferrer" class="transition-colors hover:text-[var(--color-text)]">
+					{link.label}
+				</a>
+			))}
+		</div>
+	</div>
+</footer>

@@ -78,9 +78,12 @@ web_modules/
 .next
 out
 
+# Astro build output / cache
+.astro
+dist
+
 # Nuxt.js build / generate output
 .nuxt
-dist
 .output
 
 # Gatsby files

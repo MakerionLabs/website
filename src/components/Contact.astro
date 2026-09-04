@@ -1,0 +1,24 @@
+---
+const email = "hello@makerionlabs.com";
+---
+
+<section id="contact" class="border-t border-[var(--color-border)]">
+	<div class="mx-auto max-w-3xl px-6 py-24 text-center">
+		<h2 class="text-3xl font-semibold tracking-tight sm:text-4xl">
+			Have a product in mind?
+		</h2>
+		<p class="mx-auto mt-4 max-w-xl text-[var(--color-text-muted)]">
+			Tell us what you're building — an app, a Chrome extension, an AI agent, or something in
+			between. We'll get back to you within a couple of days.
+		</p>
+
+		<div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+			<a
+				href={`mailto:${email}`}
+				class="brand-gradient-bg rounded-full px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-950/40 transition hover:brightness-110"
+			>
+				{email}
+			</a>
+		</div>
+	</div>
+</section>
